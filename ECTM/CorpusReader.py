@@ -6,11 +6,13 @@ def readFiles(fileName, vocabFileName):
     with open(fileName) as f:
         doc = f.readlines()
     CR["doc"] = []
-    for x in doc:
+    for i,x in enumerate(doc):
         y = x.split()
         ls = []
         for word in y:
             w = int(word.strip())
             ls.append(w)
         CR["doc"].append(ls)
+        if(i>10):
+            break
     return CR
