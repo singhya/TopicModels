@@ -13,6 +13,6 @@ def readFiles(fileName, vocabFileName):
             w = int(word.strip())
             ls.append(w)
         CR["doc"].append(ls)
-        if(i>10):
+        if(i>3000):
             break
     return CR

@@ -4,10 +4,10 @@ import random
 import numpy as np
 import TopicUtils
 
-ITERATIONS = 100
-BURN_IN = 10
-THIN_INTERVAL = 2
-SAMPLE_LAG = 1
+ITERATIONS = 1000
+BURN_IN = 100
+THIN_INTERVAL = 20
+SAMPLE_LAG = 10
 
 
 class ECTMGibbsSample(object):
@@ -66,9 +66,7 @@ class ECTMGibbsSample(object):
         self.sumcet[topic] -= 1
         self.sumctd[m] -= 1
         p = np.zeros(KE)
-        for i in range(0, KE):
-            p[i] = (self.cet[self.documentEntities["doc"][m][n]][i] + betaE) / (self.sumcet[i] + self.E * betaE) * (self.ctd[m][i] + alpha) / (self.sumctd[m] + KE * alpha)
-
+        p = (self.cet[self.documentEntities["doc"][m][n]] + betaE) / (self.sumcet + self.E * betaE) * (self.ctd[m] + alpha) / (self.sumctd[m] + KE * alpha)
         for i in range(1, KE):
             p[i] += p[i - 1]
 
@@ -97,9 +95,9 @@ class ECTMGibbsSample(object):
         p = np.zeros((KE, KW))
         W = len(self.documentWords["vocab"])
         for xk in range(0, KE):
-            for zk in range(0, KW):
-                p[xk][zk] = (self.cwt[self.documentWords["doc"][m][n]][zk] + betaW) / (self.sumcwt[zk] + W * betaW) * (self.ctd[m][xk] + 1) / (
-                len(self.documentWords["doc"][m]) + KE) * (self.ctt[xk][zk] + gamma) / (self.sumctt[xk] + KW * gamma);
+            p[xk] = (self.cwt[self.documentWords["doc"][m][n]] + betaW) / (self.sumcwt + W * betaW) * (self.ctd[m][xk] + 1) / (
+                len(self.documentWords["doc"][m]) + KE) * (self.ctt[xk] + gamma) / (self.sumctt[xk] + KW * gamma);
+
 
         cump = 0
         for xk in range(0, KE):
@@ -163,6 +161,7 @@ class ECTMGibbsSample(object):
                 for n, topic in enumerate(self.ze[m]):
                     topic = self.sampleEFullConditional(m, n, KW, KE, alpha, betaW, betaE, gamma)
                     self.ze[m][n] = topic
+                print "Iteration : "+str(i)+", doc : "+str(m)+", word : "+str(n)
             if ((i < BURN_IN) and (i % THIN_INTERVAL == 0)):
                 print("B")
                 dispcol += 1
@@ -226,7 +225,7 @@ class ECTMGibbsSample(object):
         else:
             for k in range(KE):
                 for e in range(self.E):
-                    phie[k][e] = (self.cet[e][k] + betaE) / (self.sumcet[k] + E * betaE);
+                    phie[k][e] = (self.cet[e][k] + betaE) / (self.sumcet[k] + self.E * betaE);
         return phie;
 
 def main():
