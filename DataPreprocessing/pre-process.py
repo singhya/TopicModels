@@ -11,12 +11,15 @@
 
 import sys
 import re
+import os
 from polyglot.text import Text
 
 
 # command-line arguments
-fn_dataset = sys.argv[1]
-num_lines = int(sys.argv[2])
+# fn_dataset = sys.argv[1]
+# num_lines = int(sys.argv[2])
+
+data_dir = os.getcwd()+"/working-data"
 
 # output filenames: all vars prefixed by fn: file name
 fn_ne_vocab = 'entity-vocab.txt'
@@ -30,6 +33,8 @@ fn_swl = 'hindi-stop-words.txt'
 # global lists for named entities and non-named entities(regular words that are not named entities)
 l_entity = []
 l_non_entity = []
+dict_non_entity_vocab = {}
+dict_non_entity_tokens_per_doc = {}
 
 # list of stop words from file
 l_stop_words = []
@@ -57,7 +62,7 @@ def output_list(target_file, target_list):
 
 # replace all English characters and numerals using regex
 def replace_english_chars_nums(txt):
-    return re.sub(r'[a-zA-Z0-9]', r'', txt)
+    return re.sub(r'[a-zA-Z0-9]', r' ', txt)
 
 
 # used to update vocabulary list
@@ -79,6 +84,18 @@ def get_entities(doc, line_idx):
     return current_entity_list
 
 
+# filter infrequently occuring non-named-entities from vocabulary and per-document-tokens dictionary
+def process_non_entities():
+    with open(fn_op_nne, "w") as nne_fo:
+        for line_idx, list_of_tokens in dict_non_entity_tokens_per_doc.items():
+            nne_fo.write("{}".format(line_idx))
+            for token in list_of_tokens:
+                if dict_non_entity_vocab[token] > 1:
+                    store_set(l_non_entity, token)
+                    nne_fo.write(" {}".format(token))
+            nne_fo.write("\n")
+
+
 # finds entities per article and replaces them with asterisk
 # returns modified article string, current article entity list
 def process_article(article, line_num):
@@ -98,77 +115,72 @@ def process_article(article, line_num):
     return this_article, current_article_nel
 
 
-# process each document up to given number of lines
-def process_lines():
-    with open(fn_dataset, 'r') as all_docs:
-        file_line_index = 0
-        for line in all_docs:
-            # replacing all punctuation before processing
-            line = line.replace('.', ' ')
-            line = line.decode('utf-8').replace(u'\u2018', '').encode('utf-8')  # for quotation mark
-            line = line.decode('utf-8').replace(u'\u2019', '').encode('utf-8')  # for quotation mark
-            line = line.replace('!', '')
-            line = line.replace('-', '')
-            line = line.replace('&', '')
-            line = line.replace(':', '')
-            line = line.replace('\'', '')
-            line = line.replace('\"', '')
-            line = line.replace(')', '')
-            line = line.replace('(', '')
-            line = line.replace('\\', '')
-            line = line.replace('/', '')
-            line = replace_english_chars_nums(line)
+# process each document (optional: up to given number of lines)
+def process_documents():
+    file_line_index = 0
+    for fn_dataset in os.listdir(data_dir):
+        with open(data_dir+"/"+fn_dataset) as all_docs:
+            print data_dir+"/"+fn_dataset
+            for line in all_docs:
+                # replacing all punctuation before processing
+                line = line.replace('.', ' ')
+                line = line.decode('utf-8').replace(u'\u2018', ' ').encode('utf-8')  # for quotation mark
+                line = line.decode('utf-8').replace(u'\u2019', ' ').encode('utf-8')  # for quotation mark
+                line = line.decode('utf-8').replace(u'\u00A0', '').encode('utf-8')  # replace no-break-space with null
 
-            sentence = Text(line, hint_language_code='hi')
-            processed_str, this_entity_list = process_article(sentence, file_line_index)
-            processed_str = processed_str.decode('utf-8').replace(u'\u0964', '').encode('utf-8')  # for devanagari full stop (danda)
-            cleaned_str = re.sub(r'[*?,]', r'', processed_str)
-            cleaned_str_wo_sw = filter_stop_words(cleaned_str)
-            curr_non_ent_list = cleaned_str_wo_sw.split()
+                line = line.replace('!', ' ')
+                line = line.replace('-', ' ')
+                line = line.replace('&', ' ')
+                line = line.replace(':', ' ')
+                line = line.replace('\'', ' ')
+                line = line.replace('\"', ' ')
+                line = line.replace(')', ' ')
+                line = line.replace('(', ' ')
+                line = line.replace('\\', ' ')
+                line = line.replace('/', ' ')
+                line = replace_english_chars_nums(line)
+                doc_contents = " ".join(line.split())
 
-            curr_ent_list = []
-            for elem in this_entity_list:
-                dashed_entity_term = '-'.join(elem.split())
-                curr_ent_list.append(dashed_entity_term)
-                store_set(l_entity, dashed_entity_term)
+                sentence = Text(doc_contents, hint_language_code='hi')
+                processed_str, this_entity_list = process_article(sentence, file_line_index)
+                processed_str = processed_str.decode('utf-8').replace(u'\u0964', ' ').encode('utf-8')  # remove Devanagari full-stop
+                cleaned_str = re.sub(r'[*?,]', r'', processed_str)  # remove asterisks and remaining punctuations marks
+                cleaned_str_wo_sw = filter_stop_words(cleaned_str)  # remove stop words from non-entity list
+                curr_non_ent_list = cleaned_str_wo_sw.split()
 
-            for elem in curr_non_ent_list:
-                store_set(l_non_entity, elem)
+                curr_ent_list = []
+                for elem in this_entity_list:
+                    dashed_entity_term = '-'.join(elem.split())
+                    curr_ent_list.append(dashed_entity_term)
+                    store_set(l_entity, dashed_entity_term)
 
-            # writing entities and non-entities per line to respective output file
-            fo_mode = ("w", "a")[file_line_index > 0]
-            with open(fn_op_ne, fo_mode) as ne_file, open(fn_op_nne, fo_mode) as nne_file:
-                ne_file.write("{} {}\n".format(file_line_index, " ".join(curr_ent_list)))
-                nne_file.write("{} {}\n".format(file_line_index, " ".join(curr_non_ent_list)))
+                dict_non_entity_tokens_per_doc[file_line_index] = curr_non_ent_list
+                for elem in curr_non_ent_list:
+                    if elem not in dict_non_entity_vocab:
+                        dict_non_entity_vocab[elem] = 1
+                    else:
+                        dict_non_entity_vocab[elem] += 1
+                    # store_set(l_non_entity, elem)
 
-            file_line_index += 1
-            if file_line_index == num_lines and num_lines != 0:
-                break
+                # writing entities and non-entities per line to respective output file
+                fo_mode = ("w", "a")[file_line_index > 0]
+                with open(fn_op_ne, fo_mode) as named_entity_fo:  # , open(fn_op_nne, fo_mode) as non_named_entity_fo:
+                    named_entity_fo.write("{} {}\n".format(file_line_index, " ".join(curr_ent_list)))
+                    # nne_file.write("{} {}\n".format(file_line_index, " ".join(curr_non_ent_list)))
 
-            # to wait after each line
-            # check_continue = raw_input("next sentence > ")
-            # if check_continue in ['n', 'N']:
-            #     break
+                file_line_index += 1
+                # if file_line_index == num_lines and num_lines != 0:
+                #     break
+
+                # to wait after each line
+                # check_continue = raw_input("next sentence > ")
+                # if check_continue in ['n', 'N']:
+                #     break
 
 
 # program starts here
 extract_stop_words()
-process_lines()
+process_documents()
+process_non_entities()
 output_list(fn_ne_vocab, l_entity)  # writes named entity vocabulary list l_entity
-output_list(fn_nne_vocab, l_non_entity)     # writes non-named entity vocabulary list l_non_entity
-
-# THIS SNIPPET IS FOR INDEXING - NEEDS TO BE UPDATED
-# with open(data_file, 'r') as sentence_file, open(ne_dict_file, 'r') as ner_file, open(nc_file, 'w') as encoded_file:
-#     ner_content = [entity.strip() for entity in ner_file.readlines()]
-#     for line in sentence_file:
-#         ner_encoded = []
-#         words = line.split()
-#         for current_word in words:
-#             if current_word in list_of_entities:
-#                 for idx, token in enumerate(ner_content):
-#                     if token == current_word:
-#                         ner_encoded.append(str(idx))
-#
-#         encoded_line = " ".join(ner_encoded)
-#         encoded_file.write("{}\n".format(encoded_line))
-
+output_list(fn_nne_vocab, l_non_entity)  # writes non-named entity vocabulary list l_non_entity

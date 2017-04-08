@@ -1,2 +1,2 @@
-# DataPreprocessing
-This folder contains code for converting text data collected from website to the iterpretable format required by ECTM and CorrLDA2
+# Data Pre-processing
+This folder contains code and for converting text data collected from Hindi news websites to the interpretable format required by the ECTM and CorrLDA2 scripts
