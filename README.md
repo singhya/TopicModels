@@ -40,59 +40,56 @@ ECTM gives us the ability to organise our news articles into a distribution over
 Some results which clearly show the ability of ECTM to cluster entities and entity-centered word-topics. 
 
 Some entity-topics which can be found under ECTM/Output/V2 include:
-- "Banks" ~ Business
-  बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
-  baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
-  bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
+- "Banks" ~ Business  
+बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव  
+baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv  
+bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve  
 
-- "Businessmen" ~ Business
-  -टाटा    गांधी      सायरस-मिस्तरी     टीसीएस टाटा-संस     इंफोसिस  रतन-टाटा    मिस्तरी   टाटा- ग्रुप       कालिदास
-  -taataa gaaandhi saayrs-mistri  tisies taataa-sns infosis rtn-taataa mistri taataa- garup kaalidaas
-  -TATA   Gandhi   Cyrus-Mistry   TCS    TATA-sons  Infosys Ratan-Tata Mistri Tata-Group    Kaalidas
+- "Businessmen" ~ Business  
+टाटा    गांधी      सायरस-मिस्तरी     टीसीएस टाटा-संस     इंफोसिस  रतन-टाटा    मिस्तरी   टाटा- ग्रुप       कालिदास  
+taataa gaaandhi saayrs-mistri  tisies taataa-sns infosis rtn-taataa mistri taataa- garup kaalidaas  
+TATA   Gandhi   Cyrus-Mistry   TCS    TATA-sons  Infosys Ratan-Tata Mistri Tata-Group    Kaalidas  
   
-- "God" ~ Spirituality
-  -- राम   हनुमान   महात्मा     लक्ष्मण    मिशेल     तुलसीदास   सीता   विष्णु    लंका  अकबर
-  -- raam hnumaan mhaatmaa lksmn    mishel   tulsidaas sitaa visnu  lnkaa akbr
-  -- Ram  Hanuman Mahatma  Lakshman Michelle Tulsidas  Sita  Vishnu TCS   Akbar
+- "God" ~ Spirituality  
+राम   हनुमान   महात्मा     लक्ष्मण    मिशेल     तुलसीदास   सीता   विष्णु    लंका  अकबर  
+raam hnumaan mhaatmaa lksmn    mishel   tulsidaas sitaa visnu  lnkaa akbr  
+Ram  Hanuman Mahatma  Lakshman Michelle Tulsidas  Sita  Vishnu TCS   Akbar  
   
-- "Political Leaders" ~ 
-  -- भारत    मोदी  प्रधानमंत्री-नरेंद्र-मोदी               नरेंद्र-मोदी       फोर्बेस   भारत-सरकार      जेट  पीएम-मोदी  आचार्य-बालकृष्ण ट्विटर
-  -- bhaart modi prdhaanmntri-nrendr-modi     nrendr-modi   forbes bhaart-srkaar  jet piem-modi aachaary-baalkrisn tvitr
-  -- Bharat Modi Prime-Minister-Narendra-Modi Narendra-Modi Forbes Bharat-Sarkaar Jet PM-Modi   Aacharya-Balakrishna Twitter
+- "Political Leaders"  
+भारत    मोदी  प्रधानमंत्री-नरेंद्र-मोदी               नरेंद्र-मोदी       फोर्बेस   भारत-सरकार      जेट  पीएम-मोदी  आचार्य-बालकृष्ण ट्विटर  
+bhaart modi prdhaanmntri-nrendr-modi     nrendr-modi   forbes bhaart-srkaar  jet piem-modi aachaary-baalkrisn tvitr  
+Bharat Modi Prime-Minister-Narendra-Modi Narendra-Modi Forbes Bharat-Sarkaar Jet PM-Modi   Aacharya-Balakrishna Twitter  
   
-- "Telecom Companies" ~ Business/Technology
-  -- रिलायंस    एयरटेल  वोडाफोन   टेलीकॉम  टराई    बीएसएनएल भारत    अनुष्का   मुकेश-अंबानी 
-  -- rilaayns eyrtel vodaafon telikom traaee biesenel bhaart anuskaa mukesh-anbaani 
-  -- Reliance Airtel Vodafone Telecom TRAI   BSNL     India  Anushka Mukesh-Ambani
+- "Telecom Companies" ~ Business/Technology  
+रिलायंस    एयरटेल  वोडाफोन   टेलीकॉम  टराई    बीएसएनएल भारत    अनुष्का   मुकेश-अंबानी  
+rilaayns eyrtel vodaafon telikom traaee biesenel bhaart anuskaa mukesh-anbaani  
+Reliance Airtel Vodafone Telecom TRAI   BSNL     India  Anushka Mukesh-Ambani  
   
-- "Social Media" ~ Technology
-  -- गूगल    भारत    फेसबुक   याहू    यूट्यूब    पेपैल   अमरीका   माइक्रोसॉफ्ट    देवदूत   विधाता 
-  -- gaugal bhaart fesbuk   yaahu yutyub  pail   amrikaa maaikrosoft devdut vidhaataa 
-  -- Google India  Facebook Yahoo Youtube Paypal America Microsoft   Angel  God
+- "Social Media" ~ Technology  
+गूगल    भारत    फेसबुक   याहू    यूट्यूब    पेपैल   अमरीका   माइक्रोसॉफ्ट    देवदूत   विधाता  
+gaugal bhaart fesbuk   yaahu yutyub  pail   amrikaa maaikrosoft devdut vidhaataa   
+Google India  Facebook Yahoo Youtube Paypal America Microsoft   Angel  God  
   
 We can also see a clear relation between Entity-topics and Word-topics. For example, 
 
 E[0] = "Banks" 
-Entities :
-   
-- -- बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
-  -- baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
-  -- bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
+Entities:  
+- बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
+  baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
+  bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
 
 The Top Three word-topics for this are:
-- -- फीसदी    बैंक   करोड़  दर  ब्यॉज रूपये   कार्ड   कम रुपए  लाख
-  -- fisdi   baink krode dr byoj rupye kaard km  rupe laakh
-  -- percent bank  crore rate interest rupee xard Less rupee lakh
+- फीसदी    बैंक   करोड़  दर  ब्यॉज रूपये   कार्ड   कम रुपए  लाख  
+  fisdi   baink krode dr byoj rupye kaard km  rupe laakh  
+  percent bank  crore rate interest rupee xard Less rupee lakh  
 
-- -- बैंकों जारी अनुसार जवाब मामले बैंक दरों पास दिन खिलाफ 
-  -- bainkon jaari anusaar jvaab maamle baink dron paas din khilaaf
-  -- banks released accordingly answer issue bank rates pass din against
+- बैंकों जारी अनुसार जवाब मामले बैंक दरों पास दिन खिलाफ  
+  bainkon jaari anusaar jvaab maamle baink dron paas din khilaaf  
+  banks released accordingly answer issue bank rates pass din against  
 
-- -- सरकार साल शामिल मन्त्रालय कदम योजना क्षेत्र समस्या आम तहत 
-  -- srkaar saal shaamil mntraaly kdm yojnaa ksetr smsyaa aam tht 
-  -- governement years inclusion ministry steps plan area problem common under
-  
-   
+- सरकार साल शामिल मन्त्रालय कदम योजना क्षेत्र समस्या आम तहत  
+  srkaar saal shaamil mntraaly kdm yojnaa ksetr smsyaa aam tht  
+  governement years inclusion ministry steps plan area problem common under  
    
    
   
