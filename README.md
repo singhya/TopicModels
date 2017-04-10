@@ -14,3 +14,8 @@ The output file from ECTM are stored under ECTM/Output. The files ECTM_theta, EC
 
 #### DataCollection
 This repository contains java code to crawl web pages from "Amar Ujala" newspaper website. The code uses "Crawler4j" (3rd party library) and "Jsoup" library to parse "Hindi" text articles from HTML document. The text files contains news articles which are output of the crawler code and csv files contains web pages which has crawled. Each text file contains news articles based on the classes.
+
+#### Evaluation
+##### Classification
+###### SVM
+This folder has python code to learn Support Vector Machine (SVM) using ECTM features. The csv files has ECTM features. This code uses sklearn and pandas inbuilt libraries in python.
