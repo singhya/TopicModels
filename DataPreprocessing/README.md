@@ -4,5 +4,5 @@ This folder contains code and for converting text data collected from Hindi news
 - rawData: contains initial datasets
 - processedData: contains processed input files required by ECTM script and SVM classifier
 
-...hello...
-...world...
+   hello  
+   world
