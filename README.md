@@ -7,5 +7,7 @@ This repository contains code for NLP topic models like CORRLDA2, ECTM. These to
 #### ECTM
 Once we get data divided as entity-vocab, non-entity-vocab, entity-term-index and non-entity-term-index we run ECTM model on top of it. These input files are present in DataPreprocessing/processedData/ECTM.
 
-#### Feature extraction from ECTM
+#### Feature extraction 
+
+#### ECTM
 The output file from ECTM are stored under ECTM/Output. The files ECTM_theta, ECTM_psi are used to extract entity topic and word topic related features for each document. These features are stored under FeatureExtraction.
