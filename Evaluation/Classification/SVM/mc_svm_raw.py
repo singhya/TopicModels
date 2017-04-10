@@ -3,9 +3,9 @@ from sklearn.svm import LinearSVC
 from sklearn.cross_validation import train_test_split
 import pandas as pd
 
-Meta = pd.read_csv("data_ECTM.csv")
+Meta = pd.read_csv("datav1.csv")
 y = Meta.pop('Label')
-x = pd.read_csv("data_raw_svm.csv")
+x = pd.read_csv("svmvector0.csv")
 #print x.shape
 #print y.shape
 
