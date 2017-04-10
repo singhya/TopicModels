@@ -72,24 +72,24 @@ Some entity-topics which can be found under ECTM/Output/V2 include:
   
 We can also see a clear relation between Entity-topics and Word-topics. For example, 
 
-- E[0] = "Banks" 
-  Entities :
-  बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
-  baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
-  bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
-  
-  The Top Three word-topics for this are:
-  -फीसदी    बैंक   करोड़  दर  ब्यॉज रूपये   कार्ड   कम रुपए  लाख
-   fisdi   baink krode dr byoj rupye kaard km  rupe laakh
-   percent bank  crore rate interest rupee xard Less rupee lakh
-  
-  -बैंकों जारी अनुसार जवाब मामले बैंक दरों पास दिन खिलाफ 
-   bainkon jaari anusaar jvaab maamle baink dron paas din khilaaf
-   banks released accordingly answer issue bank rates pass din against
-   
-  -सरकार साल शामिल मन्त्रालय कदम योजना क्षेत्र समस्या आम तहत 
-   srkaar saal shaamil mntraaly kdm yojnaa ksetr smsyaa aam tht 
-   governement years inclusion ministry steps plan area problem common under
+ - E[0] = "Banks" 
+   Entities :
+   बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
+   baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
+   bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
+
+   The Top Three word-topics for this are:
+   -फीसदी    बैंक   करोड़  दर  ब्यॉज रूपये   कार्ड   कम रुपए  लाख
+    fisdi   baink krode dr byoj rupye kaard km  rupe laakh
+    percent bank  crore rate interest rupee xard Less rupee lakh
+
+   -बैंकों जारी अनुसार जवाब मामले बैंक दरों पास दिन खिलाफ 
+    bainkon jaari anusaar jvaab maamle baink dron paas din khilaaf
+    banks released accordingly answer issue bank rates pass din against
+
+   -सरकार साल शामिल मन्त्रालय कदम योजना क्षेत्र समस्या आम तहत 
+    srkaar saal shaamil mntraaly kdm yojnaa ksetr smsyaa aam tht 
+    governement years inclusion ministry steps plan area problem common under
   
    
    
