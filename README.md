@@ -14,10 +14,12 @@ This contains scripts to generate input files required by the ECTM system and th
 - Generated vocab-entity, vocab-non-entity files: vocabularies for all words found in dataset
 - Generated term-index-entity, term-index-non-entity: replaced each article's content by solely the entity or non-entity indices found in vocabulary
 
-#### Feature extraction 
-
 #### ECTM
-Once we get data divided as entity-vocab, non-entity-vocab, entity-term-index and non-entity-term-index we run ECTM model on top of it. These input files are present in DataPreprocessing/processedData/ECTM. The output file from ECTM are stored under ECTM/Output. The files ECTM_theta, ECTM_psi are used to extract entity topic and word topic related features for each document. These features are stored under FeatureExtraction.
+Once we get data divided as entity-vocab, non-entity-vocab, entity-term-index and non-entity-term-index we run ECTM model on top of it. These input files are present in DataPreprocessing/processedData/ECTM. The output file from ECTM are stored under ECTM/Output.
+
+#### Feature extraction 
+##### ECTM
+The files ECTM_theta, ECTM_psi are used to extract entity topic and word topic related features for each document. These features are stored under FeatureExtraction.
 
 #### Evaluation
 ##### Classification
