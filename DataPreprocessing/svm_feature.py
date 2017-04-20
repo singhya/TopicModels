@@ -71,4 +71,4 @@ with open("svmvector1.csv", "wb") as f:
     writer = csv.writer(f)
     writer.writerows(vector)
         
-        
+
