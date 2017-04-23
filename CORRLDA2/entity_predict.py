@@ -69,6 +69,8 @@ def main():
     grab_matrix(fn_phiw, phiw)
     grab_matrix(fn_psi, psi)
     ent_giv_doc_scores = rank_entities(test_doc)
+
+    # printing top 20 entities
     ranked_ents = dict(sorted(ent_giv_doc_scores.items(), key=operator.itemgetter(1), reverse=True)[:20])
     for item in ranked_ents.keys():
         print item,
