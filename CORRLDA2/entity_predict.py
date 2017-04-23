@@ -31,6 +31,7 @@ def rank_entities(doc_new):
     p_e_dn = {}
     p_wt_dn = []
 
+    # calculating probability of word topic given new document
     for wt_idx, wt in enumerate(phiw):
         topic_assn = 1.0
         for word in doc_new:
@@ -41,12 +42,15 @@ def rank_entities(doc_new):
                 pass
         p_wt_dn.append(topic_assn)
 
+    # calculating probability of each entity given new document
     for ent_idx, ent in enumerate(vocab_ents):
         p_e_dn[ent] = 0.0
         p_e_wt = 0.0
         for wt_idx, wt in enumerate(phiw):
+            # calculating probability of entity given word topic
             for et_idx, et in enumerate(phie):
                 p_e_wt += phie[et_idx][ent_idx] * psi[wt_idx][et_idx]
+            # updating probability of entity given new document
             p_e_dn[ent] += p_e_wt * p_wt_dn[wt_idx]
     return p_e_dn
 
@@ -60,6 +64,7 @@ def main():
     fn_vocab_w = "../DataPreprocessing/processedData/ectm/v2/vocab-non-entity"
     test_fn = "predict-test-doc.txt"
 
+    # read test doc
     with open(test_fn, "r") as test_fo:
         test_doc = next(test_fo).strip().split()
 
