@@ -57,12 +57,17 @@ def rank_entities(doc_new):
 
 def main():
     global vocab_non_ents, vocab_ents
-    fn_phie = "Results/Dataset 2/10/CorrLDA2_phie"
-    fn_phiw = "Results/Dataset 2/10/CorrLDA2_phiw"
-    fn_psi = "Results/Dataset 2/10/CorrLDA2_psi"
-    fn_vocab_e = "../DataPreprocessing/processedData/ectm/v2/vocab-entity"
-    fn_vocab_w = "../DataPreprocessing/processedData/ectm/v2/vocab-non-entity"
-    test_fn = "predict-test-doc.txt"
+
+    try:
+        test_fn = sys.argv[1]
+        fn_vocab_e = sys.argv[2]
+        fn_vocab_w = sys.argv[3]
+        fn_phie = sys.argv[4]
+        fn_phiw = sys.argv[5]
+        fn_psi = sys.argv[6]
+    except IndexError:
+        print "Cmd usage: python ectm_entity_predict.py <TEST-DOCUMENT> <ENTITY-VOCAB> <NON-ENTITY-VOCAB> <PHIE> <PHIW> <PSI>"
+        sys.exit(0)
 
     # read test doc
     with open(test_fn, "r") as test_fo:
