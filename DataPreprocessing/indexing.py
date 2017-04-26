@@ -1,78 +1,45 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-
 @author: Jyoti
 """
 
-#inputs: First argument - entity/non-entity vocab file (Indexed 0 to n..)
-#       Second argument - entity/non-entity-list file one line per article (Indexed 0 to n..)
-#output: term-index.txt indexed terms according to index in vocab files
-    
-    
+# inputs:
+# First argument - entity/non-entity vocab file (Indexed 0 to n..)
+# Second argument - entity/non-entity-list file one line per article (Indexed 0 to n..)
+# output: term-index.txt indexed terms according to index in vocab files
+
 import sys
-import os
-import string
+
+vocab_list = []
 
 
-# In[2]:
+# extract vocabulary from file
+def grab_vocabulary(vocab):
+    with open(vocab, 'r') as vocab_fo:
+        global vocab_list
+        vocab_list = [word.strip() for word in vocab_fo]
 
-file_train = sys.argv[2]
-file_label = sys.argv[1]
 
-dict_labels = {}
+# begin indexing process
+def start_indexing(raw, target):
+    with open(raw, 'r') as raw_fo, open(target, 'w') as target_fo:
+        for line in raw_fo:
+            wordlist = line.split()
+            indexes = [vocab_list.index(word) for word in wordlist]
+            indexed_wordlist = " ".join(map(str, indexes))
+            target_fo.write("{}\n".format(indexed_wordlist))
 
-filename = open(file_label,'r')
 
-lines = filename.readlines()
-for line in lines:
-    words = line.split()
-    LB = int(words[0])
-    key = words[1] 
-    dict_labels[key] = LB
+# call this function from main module
+def index_output_documents(vocab_filename, raw_filename, target_filename):
+    print "indexing: {} {} => {}".format(vocab_filename, raw_filename, target_filename)
+    grab_vocabulary(vocab_filename)
+    start_indexing(raw_filename, target_filename)
 
-dict_words = {}
-filename.close()
 
-filename2 = open(file_train, 'r')
-
-lines = filename2.readlines()
-
-for line in lines:
-    words = line.split()
-    key = int(words[0])
-    wordlist = words[1::]
-    #wordlist = filter(lambda i: not str.isdigit(i), wordlist)
-    dict_words[key] = wordlist
-filename2.close()
-
-output_words = {}
-for k in dict_words.keys():
-    numbers = dict_words[k]
-    
-    words = []
-    for number in numbers:
-        word = dict_labels[number]
-        words.append(word)
-    
-    output_words[k] = words
-    
-
-test_file = open(file_train, 'r')
-output = open('term-index.txt', 'w+')    
-lines = test_file.readlines()
-
-i = 0
-for line in lines:
-    words = line.split()
-    key = int(words[0])
-    temp = ' '.join(map(str, output_words[key]))
-    output.write(temp) 
-    output.write('\n')
-    i = i + 1
-test_file.close()
-output.close()  
-
-        
-        
-        
+if __name__ == "__main__":
+    fn_vocab = sys.argv[1]  # filename must be vocab-[entity/non-entity][.txt]
+    fn_docs = sys.argv[2]  # filename must be output-[entity/non-entity][.txt]
+    fn_target = "term-index-"+fn_vocab[6:]
+    index_output_documents(fn_vocab, fn_docs, fn_target)
