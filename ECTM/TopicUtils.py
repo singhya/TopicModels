@@ -7,7 +7,7 @@ def saveTopTopicWords(phi, vocab, fileName, numWordsPerTopic):
     A = phi
     fileStream = open(fileName, 'w')
     for i in range(A.shape[0]):
-        sorted_list =sorted(range(len(A[i])), key=lambda k: A[i][k])
+        sorted_list = sorted(range(len(A[i])), key=lambda k: A[i][k])
         for j in range(numWordsPerTopic):
             fileStream.write(vocab[sorted_list[len(sorted_list) - 1 - j]]+" ");
         fileStream.write("\n");

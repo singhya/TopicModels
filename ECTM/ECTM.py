@@ -16,7 +16,7 @@ class ECTMGibbsSample(object):
         self.documentEntities = entityDoc
         self.W = len(wordDoc["vocab"])
         self.E = len(entityDoc["vocab"])
-        self.M  = len(wordDoc["doc"])
+        self.M = len(wordDoc["doc"])
 
     def initialize(self, KW, KE):
         self.zw = [[]] * self.M
@@ -248,21 +248,21 @@ def main():
 
     gibb_sample = ECTMGibbsSample(wordDoc, entityDoc)
     gibb_sample.gibbs(KW, KE, alpha, betaW, betaE, gamma)
-    theta = gibb_sample.getTheta(KW, KE, alpha);
-    phiw = gibb_sample.getPhiW(KW, betaW);
-    phie = gibb_sample.getPhiE(KE, betaE);
-    psi = gibb_sample.getPsi(KE, KW, gamma);
+    theta = gibb_sample.getTheta(KW, KE, alpha)
+    phiw = gibb_sample.getPhiW(KW, betaW)
+    phie = gibb_sample.getPhiE(KE, betaE)
+    psi = gibb_sample.getPsi(KE, KW, gamma)
 
-    TopicUtils.saveCSV(theta, "./ECTM_theta");
-    TopicUtils.saveCSV(phiw, "./ECTM_phiw");
-    TopicUtils.saveCSV(phie, "./ECTM_phie");
-    TopicUtils.saveCSV(psi, "./ECTM_psi");
-    TopicUtils.saveCSV(gibb_sample.cwt, "./ECTM_cwt");
-    TopicUtils.saveCSV(gibb_sample.cet, "./ECTM_cet");
-    TopicUtils.saveCSV(gibb_sample.ctt, "./ECTM_ctt");
-    TopicUtils.saveTopTopicWords(phiw, wordDoc["vocab"], "./ECTM_top-topic-words", 10);
-    TopicUtils.saveTopTopicWords(phie, entityDoc["vocab"], "./ECTM_top-topic-entities", 10);
-    TopicUtils.saveTopTopicsOfSupertopics(psi, "./ECTM_top-Supertopic-topics", 5);
+    TopicUtils.saveCSV(theta, "./ECTM_theta")
+    TopicUtils.saveCSV(phiw, "./ECTM_phiw")
+    TopicUtils.saveCSV(phie, "./ECTM_phie")
+    TopicUtils.saveCSV(psi, "./ECTM_psi")
+    TopicUtils.saveCSV(gibb_sample.cwt, "./ECTM_cwt")
+    TopicUtils.saveCSV(gibb_sample.cet, "./ECTM_cet")
+    TopicUtils.saveCSV(gibb_sample.ctt, "./ECTM_ctt")
+    TopicUtils.saveTopTopicWords(phiw, wordDoc["vocab"], "./ECTM_top-topic-words", 10)
+    TopicUtils.saveTopTopicWords(phie, entityDoc["vocab"], "./ECTM_top-topic-entities", 10)
+    TopicUtils.saveTopTopicsOfSupertopics(psi, "./ECTM_top-Supertopic-topics", 5)
 
 
 main()
