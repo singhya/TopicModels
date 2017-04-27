@@ -1,4 +1,4 @@
-dir_labels = "category-labels"
+dir_labels = "docs/category-labels"
 dir_theta_csv =""
 
 def prep(k,algo):
