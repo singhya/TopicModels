@@ -6,7 +6,7 @@ sys.path.insert(0, '/home/akarmakar/projects/ectm-project/my-topic-models-projec
 import document_clean
 
 coll_stop_words = []
-fn_swl = '../../../DataPreprocessing/utils/updated-stop-words.txt'
+fn_swl = '/home/akarmakar/projects/ectm-project/my-topic-models-project/DataPreprocessing/utils/updated-stop-words.txt'
 
 
 # retrieve list of stop words
