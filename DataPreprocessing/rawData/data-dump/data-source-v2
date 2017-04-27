@@ -1,0 +1,86 @@
+dataset-mix-0a
+
+Key:
+AU => AmarUjala
+NBT => NavbharatTimes
+
+[0]: 18Plus - AU
+range: 0-474
+count in training-file: 475
+location: TopicModels/DataPreprocessing/rawData/v2/18-plus
+src: [
+  data-dump/dataset-au-1b/au-18-plus (475)
+]
+
+[1]: Astrology - NBT
+range: 475-1320
+count in training-file: 846
+location: TopicModels/DataPreprocessing/rawData/v2/astrology
+src: [
+  data-dump/dataset-nbt-0b/nbt-astrology.txt (846)
+]
+
+[2]: Business - AU + NBT
+range: 1321-3365
+count in training-file: 2045
+location: TopicModels/DataPreprocessing/rawData/v2/business
+src: [
+  data-dump/dataset-au-1b/au-business (874),
+  data-dump/dataset-nbt-0b/nbt-business.txt (1171)
+]
+
+[3]: Education - AU + NBT
+range: 3366-4517
+count in training-file: 1152
+location: TopicModels/DataPreprocessing/rawData/v2/education
+src: [
+  data-dump/dataset-au-1b/au-education (161),
+  data-dump/dataset-nbt-0b/nbt-education.txt (991)
+]
+
+[4]: Entertainment - AU + NBT
+range: 4518-5673
+count in training-file: 1156
+location: TopicModels/DataPreprocessing/rawData/v2/entertainment
+src: [
+  data-dump/dataset-au-1b/au-entertainment (423),
+  data-dump/dataset-nbt-0b/nbt-entertainment.txt (733)
+]
+
+[5]: Lifestyle - AU + NBT
+range: 5674-6832
+count in training-file: 1159
+location: TopicModels/DataPreprocessing/rawData/v2/lifestyle
+src: [
+  data-dump/dataset-au-1b/au-fashion (130)
+  data-dump/dataset-au-1b/au-lifestyle (48)
+  data-dump/dataset-nbt-0b/nbt-lifestyle.txt (981)
+]
+
+[6]: Spirituality - AU
+range: 6833-7231
+count in training-file: 399
+location: TopicModels/DataPreprocessing/rawData/v2/spirituality
+src: [
+  data-dump/dataset-au-1b/au-spirituality (399)
+]
+
+[7]: Sports - NBT
+range: 7232-8551
+count in training-file: 1320
+location: TopicModels/DataPreprocessing/rawData/v2/sports
+src: [
+  data-dump/dataset-nbt-0b/nbt-sports.txt (1320)
+]
+
+[8]: Technology - AU + NBT
+range: 8552-9335
+count in training-file: 784
+location: TopicModels/DataPreprocessing/rawData/v2/technology
+src: [
+  data-dump/dataset-au-1b/au-technology (259),
+  data-dump/dataset-nbt-0b/nbt-technology.txt (525)
+]
+
+----------------------------------------------------------------------
+total: 9336
