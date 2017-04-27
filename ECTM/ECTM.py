@@ -1,3 +1,8 @@
+'''  We would like to acknowledge Gregor Heinrich for his
+     contibution towards topic model - http://www.arbylon.net/projects/LdaGibbsSampler.java
+     This code uses pieces of code from his implementation
+ '''
+
 import sys
 import CorpusReader
 import random
