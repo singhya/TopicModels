@@ -15,7 +15,7 @@ def prep(k,algo):
     file = open(dir_psi, 'rb')
     table_psi = [row.strip().split(' ') for row in file]
 
-    theta_psi = np.dot(np.asarray(table_theta,dtype=float),np.asarray(table_psi,dtype=float))
+    theta_psi = np.matmul(np.asarray(table_theta,dtype=float),np.asarray(table_psi,dtype=float))
 
 
     meta = ""
