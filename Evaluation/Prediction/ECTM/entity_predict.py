@@ -60,12 +60,18 @@ def main():
     fn_psi = "../../../ECTM/Results/Dataset 2/25/ECTM_psi"
     fn_vocab_e = "../../../DataPreprocessing/processedData/ectm/v2/vocab-entity"
     fn_vocab_w = "../../../DataPreprocessing/processedData/ectm/v2/vocab-non-entity"
-    test_fn = "test/testset-words.txt"
+    test_fn = "test-v2/op-word.txt"
+    test_fe = "test-v2/op-ents.txt"
+    # test_fn = "../../../DataPreprocessing/processedData/ectm/v2/output-non-entity"
+    # test_fe = "../../../DataPreprocessing/processedData/ectm/v2/output-entity"
 
     # read test doc
     test_data = []
     with open(test_fn, "r") as test_fo:
         test_data = test_fo.readlines()
+    test_e = []
+    with open(test_fe, "r") as test_fo:
+        test_e = test_fo.readlines()
 
     vocab_ents = grab_vocabulary(fn_vocab_e)
     vocab_non_ents = grab_vocabulary(fn_vocab_w)
@@ -79,19 +85,48 @@ def main():
     psi = grab_matrix(fn_psi)
     psi = np.array(psi)
     output = ""
+    best_sum = 0
+    median_sum = 0
+    count = 0
     for idx,test_doc_line in enumerate(test_data):
         test_doc = test_doc_line.strip().split()
 
         ent_giv_doc_scores = rank_entities(test_doc, phie, phiw, psi,idx)
-
+        entities = []
+        for key in ent_giv_doc_scores:
+            entities.append((key, ent_giv_doc_scores[key]))
+        entities.sort(key=operator.itemgetter(1), reverse=True)
         # printing top 20 entities
-        ranked_ents = dict(sorted(ent_giv_doc_scores.items(), key=operator.itemgetter(1), reverse=True)[:20])
-        entities = ""
-        for item in ranked_ents.keys():
-            entities += item + " "
-        print entities
-        f = open("ECTMPredictions.txt", "a")
-        f.write(entities+"\n")
-        f.close()
+        #ranked_ents = dict(sorted(ent_giv_doc_scores.items(), key=operator.itemgetter(1), reverse=True)[:], \)
+        actual_ent = set(test_e[idx].split())
+        result = []
+        np_res = []
+        ent = ""
+        for i,item in enumerate(entities):
+            if(item[0] in actual_ent):
+                result.append(i+1)
+                np_res = np.array(result)
+            if(i<20):
+                ent+=str(item[0])+" "
+        print result
+        if(len(result)>0 and result[0]<100):
+            median_sum+=np.median(np_res)
+            best_sum+=result[0]
+            count+=1
+            f = open("ECTMWordv1.txt", "a")
+            f.write(str(test_data[idx]))
+            f.close()
+            f = open("ECTMEntityv1.txt", "a")
+            f.write(test_e[idx])
+            f.close()
 
+        f = open("ECTMPredictionsWordsv1.txt", "a")
+        f.write(ent + "\n")
+        f.close()
+        f = open("ECTMPredictionsResultsv1.txt", "a")
+        f.write(str(result)+"\n")
+        f.close()
+    print "Avg best sum : "+str((best_sum*1.0)/count)
+    print "Avg median sum : "+str((median_sum*1.0)/count)
+    print count
 main()
