@@ -1,0 +1,17 @@
+ECTM:
+Avg best sum : 17.3161375661
+Avg median sum : 1579.94444444
+756
+
+Avg best sum : 15.0698719389
+Avg median sum : 1419.22275893
+4451
+
+CorrLDA2
+Avg best sum : 54.8240740741
+Avg median sum : 833.642195767
+756
+
+Avg best sum : 34.2727476971
+Avg median sum : 662.516850146
+4451
