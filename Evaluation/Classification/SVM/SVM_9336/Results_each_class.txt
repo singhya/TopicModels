@@ -1,0 +1,232 @@
+ECTM_k_1: 0.216809421842
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 2 =>F-1:  0.356357237132 Precision:  0.216809421842 Recall:  1.0
+Class: 3 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 4 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 5 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 8 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+ECTM_k_5: 0.487152034261
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 2 =>F-1:  0.636546184739 Precision:  0.536379018613 Recall:  0.782716049383
+Class: 3 =>F-1:  0.577319587629 Precision:  0.475920679887 Recall:  0.733624454148
+Class: 4 =>F-1:  0.571428571429 Precision:  0.474114441417 Recall:  0.719008264463
+Class: 5 =>F-1:  0.369942196532 Precision:  0.333333333333 Recall:  0.415584415584
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.590476190476 Precision:  0.576208178439 Recall:  0.60546875
+Class: 8 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+ECTM_k_10: 0.540685224839
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.586538461538 Precision:  0.486055776892 Recall:  0.739393939394
+Class: 2 =>F-1:  0.59209039548 Precision:  0.545833333333 Recall:  0.646913580247
+Class: 3 =>F-1:  0.682713347921 Precision:  0.684210526316 Recall:  0.681222707424
+Class: 4 =>F-1:  0.545090180361 Precision:  0.529182879377 Recall:  0.561983471074
+Class: 5 =>F-1:  0.00862068965517 Precision:  1.0 Recall:  0.004329004329
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.639534883721 Precision:  0.509259259259 Recall:  0.859375
+Class: 8 =>F-1:  0.591623036649 Precision:  0.51598173516 Recall:  0.693251533742
+ECTM_k_15: 0.605995717345
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.649425287356 Precision:  0.617486338798 Recall:  0.684848484848
+Class: 2 =>F-1:  0.705882352941 Precision:  0.662337662338 Recall:  0.755555555556
+Class: 3 =>F-1:  0.66800804829 Precision:  0.619402985075 Recall:  0.724890829694
+Class: 4 =>F-1:  0.659959758551 Precision:  0.643137254902 Recall:  0.677685950413
+Class: 5 =>F-1:  0.415189873418 Precision:  0.5 Recall:  0.354978354978
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.716279069767 Precision:  0.59383033419 Recall:  0.90234375
+Class: 8 =>F-1:  0.451612903226 Precision:  0.47619047619 Recall:  0.429447852761
+ECTM_k_20: 0.642933618844
+Class: 0 =>F-1:  0.0377358490566 Precision:  0.5 Recall:  0.0196078431373
+Class: 1 =>F-1:  0.613333333333 Precision:  0.547619047619 Recall:  0.69696969697
+Class: 2 =>F-1:  0.751196172249 Precision:  0.728538283063 Recall:  0.775308641975
+Class: 3 =>F-1:  0.651252408478 Precision:  0.58275862069 Recall:  0.737991266376
+Class: 4 =>F-1:  0.68093385214 Precision:  0.643382352941 Recall:  0.723140495868
+Class: 5 =>F-1:  0.492957746479 Precision:  0.538461538462 Recall:  0.454545454545
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.744827586207 Precision:  0.666666666667 Recall:  0.84375
+Class: 8 =>F-1:  0.688524590164 Precision:  0.739436619718 Recall:  0.644171779141
+ECTM_k_25: 0.600107066381
+Class: 0 =>F-1:  0.282352941176 Precision:  0.352941176471 Recall:  0.235294117647
+Class: 1 =>F-1:  0.526315789474 Precision:  0.448717948718 Recall:  0.636363636364
+Class: 2 =>F-1:  0.669975186104 Precision:  0.673316708229 Recall:  0.666666666667
+Class: 3 =>F-1:  0.63829787234 Precision:  0.572916666667 Recall:  0.720524017467
+Class: 4 =>F-1:  0.610244988864 Precision:  0.661835748792 Recall:  0.566115702479
+Class: 5 =>F-1:  0.483940042827 Precision:  0.478813559322 Recall:  0.489177489177
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.751401869159 Precision:  0.720430107527 Recall:  0.78515625
+Class: 8 =>F-1:  0.666666666667 Precision:  0.683870967742 Recall:  0.650306748466
+ECTM_k_30: 0.642933618844
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.598130841121 Precision:  0.615384615385 Recall:  0.581818181818
+Class: 2 =>F-1:  0.695163104612 Precision:  0.638429752066 Recall:  0.762962962963
+Class: 3 =>F-1:  0.678260869565 Precision:  0.675324675325 Recall:  0.681222707424
+Class: 4 =>F-1:  0.677777777778 Precision:  0.614093959732 Recall:  0.756198347107
+Class: 5 =>F-1:  0.532110091743 Precision:  0.565853658537 Recall:  0.502164502165
+Class: 6 =>F-1:  0.34188034188 Precision:  0.47619047619 Recall:  0.266666666667
+Class: 7 =>F-1:  0.785321100917 Precision:  0.740484429066 Recall:  0.8359375
+Class: 8 =>F-1:  0.658461538462 Precision:  0.66049382716 Recall:  0.656441717791
+
+CorrLDA2_k_1: 0.216809421842
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 2 =>F-1:  0.356357237132 Precision:  0.216809421842 Recall:  1.0
+Class: 3 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 4 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 5 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 8 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+CorrLDA2_k_5: 0.622591006424
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.679245283019 Precision:  0.611650485437 Recall:  0.763636363636
+Class: 2 =>F-1:  0.754098360656 Precision:  0.618670886076 Recall:  0.965432098765
+Class: 3 =>F-1:  0.00869565217391 Precision:  1.0 Recall:  0.00436681222707
+Class: 4 =>F-1:  0.665693430657 Precision:  0.51467268623 Recall:  0.942148760331
+Class: 5 =>F-1:  0.60147601476 Precision:  0.524115755627 Recall:  0.705627705628
+Class: 6 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 =>F-1:  0.954372623574 Precision:  0.92962962963 Recall:  0.98046875
+Class: 8 =>F-1:  0.0357142857143 Precision:  0.6 Recall:  0.0184049079755
+CorrLDA2_k_10: 0.773554603854
+Class: 0 =>F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 =>F-1:  0.766101694915 Precision:  0.869230769231 Recall:  0.684848484848
+Class: 2 =>F-1:  0.924705882353 Precision:  0.883146067416 Recall:  0.97037037037
+Class: 3 =>F-1:  0.865882352941 Precision:  0.938775510204 Recall:  0.803493449782
+Class: 4 =>F-1:  0.732576985413 Precision:  0.602666666667 Recall:  0.933884297521
+Class: 5 =>F-1:  0.732142857143 Precision:  0.623100303951 Recall:  0.887445887446
+Class: 6 =>F-1:  0.69109947644 Precision:  0.568965517241 Recall:  0.88
+Class: 7 =>F-1:  0.955512572534 Precision:  0.946360153257 Recall:  0.96484375
+Class: 8 =>F-1:  0.122905027933 Precision:  0.6875 Recall:  0.0674846625767
+CorrLDA2_k_15: 0.855460385439
+Class: 0 =>F-1:  0.565853658537 Precision:  0.563106796117 Recall:  0.56862745098
+Class: 1 =>F-1:  0.775800711744 Precision:  0.939655172414 Recall:  0.660606060606
+Class: 2 =>F-1:  0.933823529412 Precision:  0.92700729927 Recall:  0.940740740741
+Class: 3 =>F-1:  0.927927927928 Precision:  0.958139534884 Recall:  0.899563318777
+Class: 4 =>F-1:  0.861480075901 Precision:  0.79649122807 Recall:  0.938016528926
+Class: 5 =>F-1:  0.759259259259 Precision:  0.81592039801 Recall:  0.709956709957
+Class: 6 =>F-1:  0.712765957447 Precision:  0.592920353982 Recall:  0.893333333333
+Class: 7 =>F-1:  0.963391136802 Precision:  0.950570342205 Recall:  0.9765625
+Class: 8 =>F-1:  0.83950617284 Precision:  0.844720496894 Recall:  0.834355828221
+CorrLDA2_k_20: 0.882226980728
+Class: 0 =>F-1:  0.843601895735 Precision:  0.816513761468 Recall:  0.872549019608
+Class: 1 =>F-1:  0.775800711744 Precision:  0.939655172414 Recall:  0.660606060606
+Class: 2 =>F-1:  0.925742574257 Precision:  0.928039702233 Recall:  0.923456790123
+Class: 3 =>F-1:  0.921700223714 Precision:  0.94495412844 Recall:  0.899563318777
+Class: 4 =>F-1:  0.918367346939 Precision:  0.907258064516 Recall:  0.929752066116
+Class: 5 =>F-1:  0.830897703549 Precision:  0.802419354839 Recall:  0.861471861472
+Class: 6 =>F-1:  0.681081081081 Precision:  0.572727272727 Recall:  0.84
+Class: 7 =>F-1:  0.968992248062 Precision:  0.961538461538 Recall:  0.9765625
+Class: 8 =>F-1:  0.833855799373 Precision:  0.852564102564 Recall:  0.815950920245
+CorrLDA2_k_25: 0.894004282655
+Class: 0 =>F-1:  0.817307692308 Precision:  0.801886792453 Recall:  0.833333333333
+Class: 1 =>F-1:  0.851485148515 Precision:  0.934782608696 Recall:  0.781818181818
+Class: 2 =>F-1:  0.92400482509 Precision:  0.903301886792 Recall:  0.945679012346
+Class: 3 =>F-1:  0.934240362812 Precision:  0.971698113208 Recall:  0.899563318777
+Class: 4 =>F-1:  0.919587628866 Precision:  0.917695473251 Recall:  0.921487603306
+Class: 5 =>F-1:  0.852941176471 Precision:  0.828571428571 Recall:  0.878787878788
+Class: 6 =>F-1:  0.764705882353 Precision:  0.684210526316 Recall:  0.866666666667
+Class: 7 =>F-1:  0.966990291262 Precision:  0.96138996139 Recall:  0.97265625
+Class: 8 =>F-1:  0.822006472492 Precision:  0.869863013699 Recall:  0.779141104294
+CorrLDA2_k_30: 0.86670235546
+Class: 0 =>F-1:  0.533333333333 Precision:  0.615384615385 Recall:  0.470588235294
+Class: 1 =>F-1:  0.816053511706 Precision:  0.910447761194 Recall:  0.739393939394
+Class: 2 =>F-1:  0.936893203883 Precision:  0.921241050119 Recall:  0.953086419753
+Class: 3 =>F-1:  0.913907284768 Precision:  0.924107142857 Recall:  0.903930131004
+Class: 4 =>F-1:  0.887596899225 Precision:  0.835766423358 Recall:  0.946280991736
+Class: 5 =>F-1:  0.796498905908 Precision:  0.805309734513 Recall:  0.787878787879
+Class: 6 =>F-1:  0.700564971751 Precision:  0.607843137255 Recall:  0.826666666667
+Class: 7 =>F-1:  0.958904109589 Precision:  0.960784313725 Recall:  0.95703125
+Class: 8 =>F-1:  0.865203761755 Precision:  0.884615384615 Recall:  0.846625766871
+CorrLDA2_k_35: 0.892933618844
+Class: 0 =>F-1:  0.779487179487 Precision:  0.817204301075 Recall:  0.745098039216
+Class: 1 =>F-1:  0.834437086093 Precision:  0.919708029197 Recall:  0.763636363636
+Class: 2 =>F-1:  0.928829915561 Precision:  0.908018867925 Recall:  0.950617283951
+Class: 3 =>F-1:  0.92970521542 Precision:  0.966981132075 Recall:  0.89519650655
+Class: 4 =>F-1:  0.921810699588 Precision:  0.918032786885 Recall:  0.925619834711
+Class: 5 =>F-1:  0.864864864865 Precision:  0.832 Recall:  0.900432900433
+Class: 6 =>F-1:  0.704545454545 Precision:  0.613861386139 Recall:  0.826666666667
+Class: 7 =>F-1:  0.972868217054 Precision:  0.965384615385 Recall:  0.98046875
+Class: 8 =>F-1:  0.845161290323 Precision:  0.891156462585 Recall:  0.803680981595
+
+LDA_k_1: 0.216809421842
+Class: 0 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 2 => F-1:  0.356357237132 Precision:  0.216809421842 Recall:  1.0
+Class: 3 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 4 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 5 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 6 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 7 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 8 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+LDA_k_5: 0.662740899358
+Class: 0 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+Class: 1 => F-1:  0.684931506849 Precision:  0.625 Recall:  0.757575757576
+Class: 2 => F-1:  0.916279069767 Precision:  0.865934065934 Recall:  0.972839506173
+Class: 3 => F-1:  0.860169491525 Precision:  0.835390946502 Recall:  0.886462882096
+Class: 4 => F-1:  0.31884057971 Precision:  0.533980582524 Recall:  0.227272727273
+Class: 5 => F-1:  0.504283965728 Precision:  0.351535836177 Recall:  0.891774891775
+Class: 6 => F-1:  0.05 Precision:  0.4 Recall:  0.0266666666667
+Class: 7 => F-1:  0.951127819549 Precision:  0.916666666667 Recall:  0.98828125
+Class: 8 => F-1:  0.0 Precision:  0.0 Recall:  0.0
+LDA_k_10: 0.847430406852
+Class: 0 => F-1:  0.0747663551402 Precision:  0.8 Recall:  0.0392156862745
+Class: 1 => F-1:  0.793103448276 Precision:  0.92 Recall:  0.69696969697
+Class: 2 => F-1:  0.92118226601 Precision:  0.918918918919 Recall:  0.923456790123
+Class: 3 => F-1:  0.918552036199 Precision:  0.953051643192 Recall:  0.886462882096
+Class: 4 => F-1:  0.884250474383 Precision:  0.817543859649 Recall:  0.962809917355
+Class: 5 => F-1:  0.769230769231 Precision:  0.692041522491 Recall:  0.865800865801
+Class: 6 => F-1:  0.68085106383 Precision:  0.566371681416 Recall:  0.853333333333
+Class: 7 => F-1:  0.961089494163 Precision:  0.957364341085 Recall:  0.96484375
+Class: 8 => F-1:  0.85119047619 Precision:  0.826589595376 Recall:  0.877300613497
+LDA_k_15: 0.881691648822
+Class: 0 => F-1:  0.763819095477 Precision:  0.783505154639 Recall:  0.745098039216
+Class: 1 => F-1:  0.780141843972 Precision:  0.940170940171 Recall:  0.666666666667
+Class: 2 => F-1:  0.933497536946 Precision:  0.931203931204 Recall:  0.935802469136
+Class: 3 => F-1:  0.913140311804 Precision:  0.931818181818 Recall:  0.89519650655
+Class: 4 => F-1:  0.904109589041 Precision:  0.85873605948 Recall:  0.954545454545
+Class: 5 => F-1:  0.843683083512 Precision:  0.834745762712 Recall:  0.852813852814
+Class: 6 => F-1:  0.698924731183 Precision:  0.585585585586 Recall:  0.866666666667
+Class: 7 => F-1:  0.964705882353 Precision:  0.968503937008 Recall:  0.9609375
+Class: 8 => F-1:  0.8625 Precision:  0.87898089172 Recall:  0.846625766871
+LDA_k_20: 0.865631691649
+Class: 0 => F-1:  0.597014925373 Precision:  0.606060606061 Recall:  0.588235294118
+Class: 1 => F-1:  0.801393728223 Precision:  0.94262295082 Recall:  0.69696969697
+Class: 2 => F-1:  0.912621359223 Precision:  0.897374701671 Recall:  0.928395061728
+Class: 3 => F-1:  0.921296296296 Precision:  0.980295566502 Recall:  0.868995633188
+Class: 4 => F-1:  0.911937377691 Precision:  0.866171003717 Recall:  0.962809917355
+Class: 5 => F-1:  0.803611738149 Precision:  0.839622641509 Recall:  0.770562770563
+Class: 6 => F-1:  0.716577540107 Precision:  0.598214285714 Recall:  0.893333333333
+Class: 7 => F-1:  0.970873786408 Precision:  0.965250965251 Recall:  0.9765625
+Class: 8 => F-1:  0.827380952381 Precision:  0.803468208092 Recall:  0.852760736196
+LDA_k_25: 0.867237687366
+Class: 0 => F-1:  0.529100529101 Precision:  0.574712643678 Recall:  0.490196078431
+Class: 1 => F-1:  0.798611111111 Precision:  0.934959349593 Recall:  0.69696969697
+Class: 2 => F-1:  0.933494558646 Precision:  0.914691943128 Recall:  0.953086419753
+Class: 3 => F-1:  0.932432432432 Precision:  0.962790697674 Recall:  0.903930131004
+Class: 4 => F-1:  0.897880539499 Precision:  0.841155234657 Recall:  0.962809917355
+Class: 5 => F-1:  0.80266075388 Precision:  0.822727272727 Recall:  0.78354978355
+Class: 6 => F-1:  0.688888888889 Precision:  0.590476190476 Recall:  0.826666666667
+Class: 7 => F-1:  0.972972972973 Precision:  0.961832061069 Recall:  0.984375
+Class: 8 => F-1:  0.8375 Precision:  0.853503184713 Recall:  0.822085889571
+LDA_k_30: 0.878479657388
+Class: 0 => F-1:  0.826530612245 Precision:  0.86170212766 Recall:  0.794117647059
+Class: 1 => F-1:  0.801393728223 Precision:  0.94262295082 Recall:  0.69696969697
+Class: 2 => F-1:  0.914649681529 Precision:  0.944736842105 Recall:  0.886419753086
+Class: 3 => F-1:  0.910675381264 Precision:  0.908695652174 Recall:  0.912663755459
+Class: 4 => F-1:  0.912 Precision:  0.883720930233 Recall:  0.942148760331
+Class: 5 => F-1:  0.840163934426 Precision:  0.79766536965 Recall:  0.887445887446
+Class: 6 => F-1:  0.689265536723 Precision:  0.598039215686 Recall:  0.813333333333
+Class: 7 => F-1:  0.964705882353 Precision:  0.968503937008 Recall:  0.9609375
+Class: 8 => F-1:  0.820359281437 Precision:  0.801169590643 Recall:  0.840490797546
+LDA_k_35: 0.894004282655
+Class: 0 => F-1:  0.743961352657 Precision:  0.733333333333 Recall:  0.754901960784
+Class: 1 => F-1:  0.84142394822 Precision:  0.902777777778 Recall:  0.787878787879
+Class: 2 => F-1:  0.931034482759 Precision:  0.928746928747 Recall:  0.933333333333
+Class: 3 => F-1:  0.923076923077 Precision:  0.929203539823 Recall:  0.917030567686
+Class: 4 => F-1:  0.911340206186 Precision:  0.909465020576 Recall:  0.913223140496
+Class: 5 => F-1:  0.867678958785 Precision:  0.869565217391 Recall:  0.865800865801
+Class: 6 => F-1:  0.752941176471 Precision:  0.673684210526 Recall:  0.853333333333
+Class: 7 => F-1:  0.974658869396 Precision:  0.972762645914 Recall:  0.9765625
+Class: 8 => F-1:  0.864197530864 Precision:  0.869565217391 Recall:  0.858895705521
