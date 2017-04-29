@@ -72,7 +72,7 @@ Google India  Facebook Yahoo Youtube Paypal America Microsoft   Angel  God
   
 We can also see a clear relation between Entity-topics and Word-topics. For example, 
 
-E[0] = "Banks" 
+E[0] = "Banks"  
 Entities:  
 - बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव  
   baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv  
