@@ -74,9 +74,9 @@ We can also see a clear relation between Entity-topics and Word-topics. For exam
 
 E[0] = "Banks" 
 Entities:  
-- बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव 
-  baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv 
-  bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve
+- बैंक    एसबीआई  लोन  ट्रांज़ैक्शन         देशभर        आईसीआईसीआई-बैंक        पंजाब-नेशनल-बैंक         एक्सिस ईमआई  रिजरव  
+  baink esbiaaee lon  traanzaikshn  deshbhr      aaeesiaaeesiaaee-baink pnjaab-neshnl-baink   eksis eaaee  rijrv  
+  bank  SBI      loan transaction   country-wide ICICI-bank             Punjab-National-Bank  AXIS   EMI   Reserve  
 
 The Top Three word-topics for this are:
 - फीसदी    बैंक   करोड़  दर  ब्यॉज रूपये   कार्ड   कम रुपए  लाख  
